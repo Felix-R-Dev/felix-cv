@@ -1,248 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Felix R — Software Developer CV" />
-  <title>Felix R — Software Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <div class="page">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Felix Rojas — Senior Software Engineer (.NET | Azure | Microservices)" />
+  <title>Felix Rojas — CV</title>
 
-    <!-- ───────────────────────────── HEADER ───────────────────────────── -->
-    <header class="header">
-      <div class="header__identity">
-        <h1 class="header__name">Felix R.</h1>
-        <p class="header__title">Software Developer</p>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__brand">
+        <span class="topbar__dot" aria-hidden="true"></span>
+        <span class="topbar__name">Felix Rojas</span>
       </div>
 
-      <address class="header__contact">
-        <a href="mailto:felix@example.com" class="contact-link">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          felix@example.com
-        </a>
-        <a href="tel:+1234567890" class="contact-link">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-          +1 (234) 567-890
-        </a>
-        <a href="https://github.com/Felix-R-Dev" target="_blank" rel="noopener" class="contact-link">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.071 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
-          github.com/Felix-R-Dev
-        </a>
-        <a href="https://linkedin.com/in/felixr" target="_blank" rel="noopener" class="contact-link">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-8.5 7.5v7h-2v-7h2zm1.25-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM16 10.5c-1.7 0-2.5 1.1-2.5 1.1v-.6h-2v7h2v-4c0-1 .5-1.5 1.5-1.5s1.5.5 1.5 1.5v4h2v-4c0-2.2-1-3.5-2.5-3.5z"/></svg>
-          linkedin.com/in/felixr
-        </a>
-        <span class="contact-link contact-link--plain">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-          Berlin, Germany
-        </span>
-      </address>
-    </header>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="#languages">Languages</a>
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
 
-    <main class="main">
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="index-one-page.html">One-Page CV</a>
+        <button class="btn btn--ghost" type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
 
-      <!-- ──────────────────────────── SUMMARY ───────────────────────────── -->
-      <section class="section" aria-labelledby="summary-heading">
-        <h2 class="section__title" id="summary-heading">Profile</h2>
-        <p class="summary">
-          Passionate Software Developer with 5+ years of experience designing and
-          building scalable web applications and APIs. Strong background in
-          full-stack development with a focus on clean architecture, performance,
-          and developer experience. Enthusiastic about open-source, mentoring, and
-          continuous learning.
-        </p>
-      </section>
+  <main id="content" class="container">
+    <section class="hero" aria-label="Header">
+      <div class="hero__card">
+        <div class="hero__left">
+          <p class="hero__eyebrow">Senior Software Engineer</p>
+          <h1 class="hero__title">Felix Rojas</h1>
+          <p class="hero__subtitle">.NET | Azure | Microservices</p>
 
-      <!-- ─────────────────────────── SKILLS ────────────────────────────── -->
-      <section class="section" aria-labelledby="skills-heading">
-        <h2 class="section__title" id="skills-heading">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3 class="skill-group__label">Languages</h3>
-            <ul class="tag-list">
-              <li class="tag">TypeScript</li>
-              <li class="tag">JavaScript</li>
-              <li class="tag">Python</li>
-              <li class="tag">Java</li>
-              <li class="tag">SQL</li>
-              <li class="tag">Bash</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group__label">Frontend</h3>
-            <ul class="tag-list">
-              <li class="tag">React</li>
-              <li class="tag">Next.js</li>
-              <li class="tag">HTML5 / CSS3</li>
-              <li class="tag">Tailwind CSS</li>
-              <li class="tag">Vite</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group__label">Backend</h3>
-            <ul class="tag-list">
-              <li class="tag">Node.js</li>
-              <li class="tag">Express</li>
-              <li class="tag">NestJS</li>
-              <li class="tag">FastAPI</li>
-              <li class="tag">REST &amp; GraphQL</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group__label">Data &amp; Cloud</h3>
-            <ul class="tag-list">
-              <li class="tag">PostgreSQL</li>
-              <li class="tag">MongoDB</li>
-              <li class="tag">Redis</li>
-              <li class="tag">AWS</li>
-              <li class="tag">Docker</li>
-              <li class="tag">Kubernetes</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group__label">Tools &amp; Practices</h3>
-            <ul class="tag-list">
-              <li class="tag">Git / GitHub</li>
-              <li class="tag">CI/CD</li>
-              <li class="tag">TDD</li>
-              <li class="tag">Agile / Scrum</li>
-              <li class="tag">Jest / Vitest</li>
-            </ul>
+          <ul class="meta" aria-label="Contact details">
+            <li><span class="meta__label">Location</span><span class="meta__value">Bogotá, Colombia</span></li>
+            <li><span class="meta__label">Email</span><a class="meta__value" href="mailto:felix.rojas.dev@gmail.com">felix.rojas.dev@gmail.com</a></li>
+            <li><span class="meta__label">Phone</span><a class="meta__value" href="tel:+573002878601">+57 300 287 8601</a></li>
+            <li><span class="meta__label">Languages</span><span class="meta__value">Spanish (Native), English (B2)</span></li>
+            <li><span class="meta__label">LinkedIn</span><a class="meta__value" href="https://www.linkedin.com/in/ing-felix-rojas" target="_blank" rel="noreferrer">linkedin.com/in/ing-felix-rojas</a></li>
+            <li><span class="meta__label">Portfolio</span><a class="meta__value" href="https://linktr.ee/dev_felix_rojas" target="_blank" rel="noreferrer">linktr.ee/dev_felix_rojas</a></li>
+          </ul>
+
+          <div class="chips" aria-label="Highlights">
+            <span class="chip">9+ years</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Azure</span>
+            <span class="chip">.NET</span>
+            <span class="chip">Full-stack</span>
           </div>
         </div>
-      </section>
 
-      <!-- ─────────────────────────── EXPERIENCE ────────────────────────── -->
-      <section class="section" aria-labelledby="experience-heading">
-        <h2 class="section__title" id="experience-heading">Work Experience</h2>
+        <div class="hero__right">
+          <aside class="quick" aria-label="At a glance">
+            <h2 class="section__title section__title--small">At a glance</h2>
+            <ul class="quick__list">
+              <li><strong>Backend:</strong> .NET Core, C#, Web APIs, Microservices</li>
+              <li><strong>Cloud:</strong> Azure Functions, App Services, Service Bus, Blob Storage, App Configuration</li>
+              <li><strong>Frontend:</strong> Angular, React, TypeScript</li>
+              <li><strong>Databases:</strong> SQL Server, Oracle, Cosmos DB</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">Senior Software Developer</h3>
-              <p class="entry__sub">TechCorp GmbH · Berlin, Germany</p>
-            </div>
-            <time class="entry__period">Jan 2022 — Present</time>
+    <section id="languages" class="section">
+      <h2 class="section__title">Languages</h2>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3 class="card__title">Spanish</h3>
+          <p class="card__text">Native</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">English</h3>
+          <p class="card__text">B2 (Upper-Intermediate)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="summary" class="section">
+      <h2 class="section__title">Professional Summary</h2>
+      <p class="section__text">
+        Senior Software Engineer with 9+ years of experience designing and delivering cloud-native and enterprise applications.
+        Specialized in C# and .NET, microservices, and Azure services including Functions, App Services, Service Bus, Blob Storage,
+        App Configuration, Key Vault, and Cosmos DB, with strong database expertise in SQL Server.
+        Full-stack background with Angular and React, plus practical use of AI-assisted development tools (GitHub Copilot, ChatGPT,
+        Gemini, and Claude) to accelerate delivery quality and team productivity.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section__title">Technical Skills</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3 class="card__title">Backend</h3>
+          <p class="card__text">.NET (Core / MVC), C#, Web APIs, Microservices</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Frontend</h3>
+          <p class="card__text">React, Angular, NgRx, JavaScript, TypeScript, HTML, CSS</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Cloud & DevOps</h3>
+          <p class="card__text">Azure Functions, App Services, Service Bus, Blob Storage, App Configuration, Azure Key Vault, CI/CD, On-Premise Agents</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Databases</h3>
+          <p class="card__text">SQL Server, Oracle, Cosmos DB, Table Storage</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Tools</h3>
+          <p class="card__text">Git, TFS, Postman, SoapUI</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">AI Tools</h3>
+          <p class="card__text">GitHub Copilot (VS Code / Visual Studio), ChatGPT, Gemini, Claude</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Architecture</h3>
+          <p class="card__text">REST APIs, Distributed Systems</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section__title">Professional Experience</h2>
+      <p class="section__hint">Engagement tags indicate contract and concurrent assignments where dates overlap.</p>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Backend .NET Developer</h3>
+            <p class="role__company">Globant</p>
           </div>
-          <ul class="entry__bullets">
-            <li>Led the migration of a monolithic e-commerce platform to a microservices architecture, reducing deployment time by 60%.</li>
-            <li>Designed and implemented a real-time notification system using WebSockets and Redis Pub/Sub, serving 50 k+ concurrent users.</li>
-            <li>Mentored 3 junior developers through code reviews, pair programming, and weekly 1-on-1 sessions.</li>
-            <li>Introduced automated end-to-end testing with Playwright, increasing release confidence and cutting bug reports by 40%.</li>
-          </ul>
-        </article>
-
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">Software Developer</h3>
-              <p class="entry__sub">Startup Labs · Remote</p>
-            </div>
-            <time class="entry__period">Mar 2020 — Dec 2021</time>
-          </div>
-          <ul class="entry__bullets">
-            <li>Built a multi-tenant SaaS dashboard with React and TypeScript, onboarding 200+ business clients within the first year.</li>
-            <li>Developed RESTful APIs with Node.js/Express backed by PostgreSQL, achieving 99.9% uptime over 18 months.</li>
-            <li>Improved API response time by 35% through query optimisation and strategic use of Redis caching.</li>
-            <li>Collaborated closely with UX designers to implement accessible, WCAG 2.1-compliant components.</li>
-          </ul>
-        </article>
-
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">Junior Software Developer</h3>
-              <p class="entry__sub">WebAgency Berlin · Berlin, Germany</p>
-            </div>
-            <time class="entry__period">Sep 2018 — Feb 2020</time>
-          </div>
-          <ul class="entry__bullets">
-            <li>Developed and maintained 10+ client websites using JavaScript, PHP, and WordPress.</li>
-            <li>Implemented responsive front-end layouts using HTML5/CSS3 and Bootstrap.</li>
-            <li>Integrated third-party APIs (payment gateways, mapping services, analytics).</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- ─────────────────────────── PROJECTS ─────────────────────────── -->
-      <section class="section" aria-labelledby="projects-heading">
-        <h2 class="section__title" id="projects-heading">Projects</h2>
-
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">
-                OpenBudget
-                <a href="https://github.com/Felix-R-Dev/openbudget" target="_blank" rel="noopener" class="entry__link" aria-label="OpenBudget on GitHub">
-                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3h7v7l-2-2-7 7-3-3 7-7-2-2zM5 5h5l-2 2H5v12h12v-3l2-2v5H3V5h2z"/></svg>
-                </a>
-              </h3>
-              <p class="entry__sub">Personal finance tracker · TypeScript · React · Node.js · PostgreSQL</p>
-            </div>
-            <time class="entry__period">2024</time>
-          </div>
-          <ul class="entry__bullets">
-            <li>Full-stack personal finance application with budget tracking, spending analytics and CSV import.</li>
-            <li>Implemented OAuth 2.0 authentication and row-level security in PostgreSQL.</li>
-            <li>Deployed on AWS using Docker Compose with automated GitHub Actions CI/CD pipeline.</li>
-          </ul>
-        </article>
-
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">
-                DevNotes CLI
-                <a href="https://github.com/Felix-R-Dev/devnotes" target="_blank" rel="noopener" class="entry__link" aria-label="DevNotes CLI on GitHub">
-                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3h7v7l-2-2-7 7-3-3 7-7-2-2zM5 5h5l-2 2H5v12h12v-3l2-2v5H3V5h2z"/></svg>
-                </a>
-              </h3>
-              <p class="entry__sub">Open-source CLI tool · Python · SQLite · Published on PyPI · ★ 350</p>
-            </div>
-            <time class="entry__period">2023</time>
-          </div>
-          <ul class="entry__bullets">
-            <li>Command-line tool for managing developer notes and code snippets with fuzzy-search and tag filtering.</li>
-            <li>350+ GitHub stars; published to PyPI with automated release workflow.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- ─────────────────────────── EDUCATION ────────────────────────── -->
-      <section class="section" aria-labelledby="education-heading">
-        <h2 class="section__title" id="education-heading">Education</h2>
-
-        <article class="entry">
-          <div class="entry__header">
-            <div>
-              <h3 class="entry__title">B.Sc. Computer Science</h3>
-              <p class="entry__sub">Technische Universität Berlin · Berlin, Germany</p>
-            </div>
-            <time class="entry__period">2014 — 2018</time>
-          </div>
-          <p class="entry__note">Thesis: "Optimising Graph Traversal Algorithms for Large-Scale Social Networks" · Grade: 1.8 (Good)</p>
-        </article>
-      </section>
-
-      <!-- ─────────────────────────── LANGUAGES ────────────────────────── -->
-      <section class="section" aria-labelledby="languages-heading">
-        <h2 class="section__title" id="languages-heading">Languages</h2>
-        <ul class="lang-list">
-          <li class="lang-item"><span class="lang-item__name">English</span><span class="lang-item__level">Fluent (C2)</span></li>
-          <li class="lang-item"><span class="lang-item__name">German</span><span class="lang-item__level">Native</span></li>
-          <li class="lang-item"><span class="lang-item__name">Spanish</span><span class="lang-item__level">Intermediate (B1)</span></li>
+          <p class="role__date">Nov 2024 – Present</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET Core, C#, Microservices, Azure Functions, Azure Service Bus, Azure App Services, Azure App Configuration, Azure Blob Storage, Azure Key Vault, Cosmos DB, Azure Table Storage, Contentful, On-Premise Agents</p>
+        <ul class="role__bullets">
+          <li>Designed and delivered microservices in .NET Core that improved service scalability and supported peak traffic events with higher reliability.</li>
+          <li>Implemented Azure Functions, App Services, Service Bus, Key Vault, App Configuration, and Blob Storage pipelines to streamline releases.</li>
+          <li>Optimized data access patterns across Cosmos DB and Table Storage to improve API responsiveness.</li>
+          <li>Built and maintained Contentful CMS templates that accelerated content publishing workflows.</li>
+          <li>Provided production support for FIFA-related events, helping sustain stable performance during high-demand periods.</li>
         </ul>
-      </section>
+      </article>
 
-    </main>
-  </div>
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Full Stack Developer <span class="tag">Contract</span> <span class="tag">Concurrent</span></h3>
+            <p class="role__company">Black Zero</p>
+          </div>
+          <p class="role__date">Jun 2022 – Aug 2024</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET 8, C#, Microservices, Angular, React, NgRx, HTML, CSS, Azure App Services, Azure Functions</p>
+        <ul class="role__bullets">
+          <li>Delivered .NET 8 microservices for business-critical modules, helping shorten feature delivery cycles.</li>
+          <li>Built Angular and React frontends with NgRx-based state management, improving UX consistency and reducing regression issues.</li>
+          <li>Implemented reusable responsive UI components to improve frontend team efficiency.</li>
+          <li>Integrated Azure App Services and Azure Functions into release workflows to increase deployment reliability.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Backend Developer</h3>
+            <p class="role__company">Lean Tech</p>
+          </div>
+          <p class="role__date">Jul 2021 – Jul 2022</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET Core, Node.js, SQL Server, SOAP, REST, Postman, SoapUI, On-Premise Agents</p>
+        <ul class="role__bullets">
+          <li>Improved API quality by creating SOAP and REST validation suites in Postman and SoapUI, reducing production defects.</li>
+          <li>Developed and optimized SQL Server stored procedures for request/response workflows to improve query performance.</li>
+          <li>Contributed to internal Node.js and .NET Core platform features that improved operational efficiency.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Software Development Engineer <span class="tag">Contract</span> <span class="tag">Concurrent</span></h3>
+            <p class="role__company">W2D IT S.A.S</p>
+          </div>
+          <p class="role__date">Sep 2019 – Dec 2022</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET Core, C#, REST API, SQL Server, Oracle, Xamarin</p>
+        <ul class="role__bullets">
+          <li>Delivered web applications and REST APIs in .NET Core that supported active users and improved process throughput.</li>
+          <li>Designed SQL Server and Oracle schemas for transactional systems, improving data integrity and reducing support issues.</li>
+          <li>Built Xamarin mobile apps that streamlined field operations and reduced manual processing time.</li>
+          <li>Integrated facial recognition, document scanning, and access control libraries to expand platform capabilities and speed up verification flows.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Software Analyst</h3>
+            <p class="role__company">Skandia</p>
+          </div>
+          <p class="role__date">Jan 2019 – Aug 2019</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET, C#, Microservices, SQL Server, Scrum</p>
+        <ul class="role__bullets">
+          <li>Developed microservices for data pipelines that improved data processing reliability.</li>
+          <li>Created SQL Server stored procedures for integration and transformation workflows, reducing batch processing time.</li>
+          <li>Collaborated in Scrum ceremonies to improve sprint predictability and on-time delivery.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Software Developer / Technical Lead</h3>
+            <p class="role__company">RAPP – BIG Holding</p>
+          </div>
+          <p class="role__date">Jul 2014 – Jan 2019</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> C#, .NET, REST Services, SQL Server, Technical Leadership</p>
+        <ul class="role__bullets">
+          <li>Developed C# web applications and REST services that improved business process execution speed.</li>
+          <li>Designed databases and optimized stored procedures, reducing report and transaction latency.</li>
+          <li>Led development teams, improving delivery predictability and cross-team coordination.</li>
+          <li>Produced technical documentation and system designs that made onboarding faster for new developers.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section__title">Education</h2>
+
+      <div class="card card--wide">
+        <h3 class="card__title">Postgraduate Degree in Software Engineering</h3>
+        <p class="card__text">Universidad Distrital Francisco José de Caldas · 2017 – 2018</p>
+      </div>
+
+      <div class="card card--wide">
+        <h3 class="card__title">Bachelor’s Degree in Systems Engineering</h3>
+        <p class="card__text">Universidad Manuela Beltrán · 2010 – 2015</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Certifications</h2>
+
+      <div class="card card--wide">
+        <h3 class="card__title">Scrum Master</h3>
+        <p class="card__text">Issued in 2018</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">
+        © <span id="y"></span> Felix Rojas · Built with HTML/CSS · <a href="#content">Back to top</a>
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

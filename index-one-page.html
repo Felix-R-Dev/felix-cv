@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Felix Rojas - One-Page CV" />
+  <title>Felix Rojas - One-Page CV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__brand">
+        <span class="topbar__dot" aria-hidden="true"></span>
+        <span class="topbar__name">Felix Rojas - One-Page CV</span>
+      </div>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="index.html">Full CV</a>
+        <button class="btn btn--ghost" type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="hero" aria-label="Header">
+      <div class="hero__card">
+        <div class="hero__left">
+          <p class="hero__eyebrow">Senior Software Engineer</p>
+          <h1 class="hero__title">Felix Rojas</h1>
+          <p class="hero__subtitle">.NET | Azure | Microservices | Angular | React</p>
+
+          <ul class="meta" aria-label="Contact details">
+            <li><span class="meta__label">Location</span><span class="meta__value">Bogota, Colombia</span></li>
+            <li><span class="meta__label">Email</span><a class="meta__value" href="mailto:felix.rojas.dev@gmail.com">felix.rojas.dev@gmail.com</a></li>
+            <li><span class="meta__label">Phone</span><a class="meta__value" href="tel:+573002878601">+57 300 287 8601</a></li>
+            <li><span class="meta__label">Languages</span><span class="meta__value">Spanish (Native), English (B2)</span></li>
+            <li><span class="meta__label">LinkedIn</span><a class="meta__value" href="https://www.linkedin.com/in/ing-felix-rojas" target="_blank" rel="noreferrer">linkedin.com/in/ing-felix-rojas</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__right">
+          <section class="quick" aria-label="Summary">
+            <h2 class="section__title section__title--small">Professional Summary</h2>
+            <p class="section__text">
+              Senior Software Engineer with 9+ years delivering cloud-native and enterprise applications. Specialized in C#, .NET,
+              microservices, and Azure (Functions, App Services, Service Bus, Blob Storage, App Configuration, Key Vault, Cosmos DB),
+              with full-stack delivery in Angular and React.
+            </p>
+          </section>
+
+          <section class="quick" aria-label="Core skills">
+            <h2 class="section__title section__title--small">Core Skills</h2>
+            <ul class="quick__list">
+              <li><strong>Backend:</strong> C#, .NET Core, ASP.NET Core, REST APIs, Microservices</li>
+              <li><strong>Cloud:</strong> Azure Functions, App Services, Service Bus, Blob Storage, App Configuration, Key Vault</li>
+              <li><strong>Data:</strong> SQL Server, Cosmos DB, Oracle</li>
+              <li><strong>AI Tools:</strong> GitHub Copilot, ChatGPT, Gemini, Claude</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Selected experience">
+      <h2 class="section__title">Selected Experience</h2>
+      <p class="section__hint">Contract and concurrent tags clarify overlapping timelines.</p>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Backend .NET Developer</h3>
+            <p class="role__company">Globant</p>
+          </div>
+          <p class="role__date">Nov 2024 - Present</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET Core, Azure Functions, Service Bus, App Services, Blob Storage, Cosmos DB</p>
+        <ul class="role__bullets">
+          <li>Delivered scalable microservices for high-demand products and improved production reliability.</li>
+          <li>Implemented Azure cloud integrations that reduced lead time for releases.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Full Stack Developer <span class="tag">Contract</span> <span class="tag">Concurrent</span></h3>
+            <p class="role__company">Black Zero</p>
+          </div>
+          <p class="role__date">Jun 2022 - Aug 2024</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET 8, Angular, React, NgRx, Azure App Services, Azure Functions</p>
+        <ul class="role__bullets">
+          <li>Built full-stack features that shortened release cycles across web platforms.</li>
+          <li>Developed reusable UI patterns and state-managed applications, reducing frontend rework.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header class="role__header">
+          <div>
+            <h3 class="role__title">Software Development Engineer <span class="tag">Contract</span> <span class="tag">Concurrent</span></h3>
+            <p class="role__company">W2D IT S.A.S</p>
+          </div>
+          <p class="role__date">Sep 2019 - Dec 2022</p>
+        </header>
+        <p class="role__stack"><strong>Tech:</strong> .NET Core, REST APIs, SQL Server, Oracle, Xamarin</p>
+        <ul class="role__bullets">
+          <li>Delivered web, API, and mobile solutions that improved process throughput and user operations.</li>
+          <li>Integrated third-party security and scanning services, reducing validation time.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" aria-label="Education and certifications">
+      <h2 class="section__title">Education & Certifications</h2>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3 class="card__title">Education</h3>
+          <p class="card__text">Postgraduate Degree in Software Engineering</p>
+          <p class="card__text">Bachelor's Degree in Systems Engineering</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Certifications</h3>
+          <p class="card__text">Scrum Master (2018)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
